@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)https://9ftec.com/tool-h5/retirement_guaranteed_income_calculator.html?utm_source=chatgpt.com -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Retirement Guaranteed Income Calculator</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="./assets/tailwind-runtime.js"></script>
+  <!-- FontAwesome 图标 -->
+  <link rel="stylesheet" href="./assets/fontawesome.min.css">
+  <style>
+    body {
+      background-color: #f1f5f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    input[type=range] {
+      accent-color: #0284c7;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-y-0{top:0px;bottom:0px}.bottom-0{bottom:0px}.left-0{left:0px}.right-0{right:0px}.top-0{top:0px}.z-30{z-index:30}.z-40{z-index:40}.mx-auto{margin-left:auto;margin-right:auto}.my-1{margin-top:0.25rem;margin-bottom:0.25rem}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-2{margin-bottom:0.5rem}.ml-1{margin-left:0.25rem}.ml-2{margin-left:0.5rem}.mt-0\.5{margin-top:0.125rem}.mt-1\.5{margin-top:0.375rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-2{height:0.5rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-9{height:2.25rem}.w-11{width:2.75rem}.w-2{width:0.5rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.375rem * var(--tw-space-x-reverse));margin-left:calc(0.375rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-l-4{border-left-width:4px}.border-sky-400\/30{border-color:rgb(56 189 248 / 0.3)}.border-sky-500{--tw-border-opacity:1;border-color:rgb(14 165 233 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-700\/60{border-color:rgb(51 65 85 / 0.6)}.border-sky-600{--tw-border-opacity:1;border-color:rgb(2 132 199 / var(--tw-border-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-sky-50{--tw-bg-opacity:1;background-color:rgb(240 249 255 / var(--tw-bg-opacity, 1))}.bg-sky-500{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.bg-sky-500\/20{background-color:rgb(14 165 233 / 0.2)}.bg-sky-600{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-50\/50{background-color:rgb(248 250 252 / 0.5)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-sky-50\/80{background-color:rgb(240 249 255 / 0.8)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-slate-800{--tw-gradient-to:rgb(30 41 59 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #1e293b var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-sky-950{--tw-gradient-to:#082f49 var(--tw-gradient-to-position)}.p-0\.5{padding:0.125rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-28{padding-bottom:7rem}.pl-3{padding-left:0.75rem}.pl-8{padding-left:2rem}.pr-3{padding-right:0.75rem}.pt-3{padding-top:0.75rem}.text-left{text-align:left}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-light{font-weight:300}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-sky-200{--tw-text-opacity:1;color:rgb(186 230 253 / var(--tw-text-opacity, 1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252 / var(--tw-text-opacity, 1))}.text-sky-500{--tw-text-opacity:1;color:rgb(14 165 233 / var(--tw-text-opacity, 1))}.text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199 / var(--tw-text-opacity, 1))}.text-sky-700{--tw-text-opacity:1;color:rgb(3 105 161 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-sky-900{--tw-text-opacity:1;color:rgb(12 74 110 / var(--tw-text-opacity, 1))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sky-500\/20{--tw-shadow-color:rgb(14 165 233 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.after\:absolute::after{content:var(--tw-content);position:absolute}.after\:left-\[2px\]::after{content:var(--tw-content);left:2px}.after\:top-\[2px\]::after{content:var(--tw-content);top:2px}.after\:h-5::after{content:var(--tw-content);height:1.25rem}.after\:w-5::after{content:var(--tw-content);width:1.25rem}.after\:rounded-full::after{content:var(--tw-content);border-radius:9999px}.after\:border::after{content:var(--tw-content);border-width:1px}.after\:border-slate-300::after{content:var(--tw-content);--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.after\:bg-white::after{content:var(--tw-content);--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.after\:transition-all::after{content:var(--tw-content);transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.after\:content-\[\'\'\]::after{--tw-content:'';content:var(--tw-content)}.hover\:border-slate-300:hover{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.hover\:bg-sky-700:hover{--tw-bg-opacity:1;background-color:rgb(3 105 161 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-sky-500:focus{--tw-border-opacity:1;border-color:rgb(14 165 233 / var(--tw-border-opacity, 1))}.focus\:ring-sky-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(14 165 233 / var(--tw-ring-opacity, 1))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.peer:checked ~ .peer-checked\:bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.peer:checked ~ .peer-checked\:after\:translate-x-full::after{content:var(--tw-content);--tw-translate-x:100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.peer:checked ~ .peer-checked\:after\:border-white::after{content:var(--tw-content);--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.peer:focus ~ .peer-focus\:outline-none{outline:2px solid transparent;outline-offset:2px}</style></head>
+<body class="pb-28">
+
+  <!-- 顶部导航 -->
+  <header class="bg-slate-900 text-white px-4 py-3 sticky top-0 z-40 shadow-md">
+    <div class="max-w-md mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 rounded-lg bg-sky-500 flex items-center justify-center text-white font-bold text-sm shadow">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+          <h1 class="text-sm font-bold leading-tight tracking-tight" id="t_headerTitle">Retirement Guaranteed Income</h1>
+          <p class="text-[10px] text-slate-400" id="t_headerSub">7.2% Guaranteed Roll-up · Lifetime Cash Flow</p>
+        </div>
+      </div>
+      
+      <!-- 右上角多语言切换器 (中 / EN / ES) -->
+      <div class="flex items-center bg-slate-800 border border-slate-700 rounded-lg p-0.5 text-[11px] font-medium">
+        <button type="button" onclick="changeLang('zh')" id="langBtn_zh" class="px-2 py-0.5 rounded text-slate-400 hover:text-white transition-all">中</button>
+        <button type="button" onclick="changeLang('en')" id="langBtn_en" class="px-2 py-0.5 rounded text-white bg-sky-600 transition-all font-semibold">EN</button>
+        <button type="button" onclick="changeLang('es')" id="langBtn_es" class="px-2 py-0.5 rounded text-slate-400 hover:text-white transition-all">ES</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-md mx-auto px-4 py-4 space-y-4">
+
+    <!-- 核心结果展示卡片 -->
+    <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-950 text-white rounded-2xl p-5 shadow-xl border border-slate-700/60 relative overflow-hidden">
+      <div class="flex justify-between items-start mb-2">
+        <span class="text-xs uppercase tracking-wider text-sky-300 font-semibold flex items-center gap-1.5">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="t_monthlyLabel">Guaranteed Monthly Income</span>
+        </span>
+        <div id="rateBadge" class="bg-sky-500/20 text-sky-300 border border-sky-400/30 text-xs px-2.5 py-0.5 rounded-full font-mono font-medium">Payout Rate 8.14%</div>
+      </div>
+
+      <div class="flex items-baseline space-x-1 my-1">
+        <span class="text-2xl font-light text-sky-200">$</span>
+        <span id="monthlyIncome" class="text-4xl font-extrabold tracking-tight text-white">960.32</span>
+        <span class="text-xs text-slate-300 font-normal ml-1" id="t_perMonth">/ mo</span>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2 mt-4 pt-3 border-t border-slate-700/60 text-xs">
+        <div>
+          <span class="text-slate-400 block text-[11px]" id="t_annualLabel">Guaranteed Annual Income</span>
+          <span id="annualIncome" class="text-sm font-bold text-emerald-400 font-mono">$11,523.87</span>
+        </div>
+        <div>
+          <span class="text-slate-400 block text-[11px]" id="t_incomeBaseLabel">Income Base at Activation</span>
+          <span id="incomeBase" class="text-sm font-bold text-sky-300 font-mono">$141,570.88</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2x Enhanced Care Doubler 开关 -->
+    <div class="bg-white rounded-xl p-3.5 shadow-sm border border-slate-200 flex items-center justify-between transition-colors duration-200" id="doublerContainer">
+      <div class="flex items-center space-x-3">
+        <div id="doublerIconBg" class="w-9 h-9 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center text-base flex-shrink-0 transition-colors">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <div>
+          <div class="flex items-center space-x-1.5">
+            <span class="text-sm font-bold text-slate-800" id="t_careTitle">2x Enhanced Care Multiplier</span>
+            <span id="doublerStatus" class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-slate-100 text-slate-500">OFF</span>
+          </div>
+          <p class="text-[11px] text-slate-500 leading-tight" id="t_careDesc">Doubles monthly income for up to 5 yrs upon failing 2 of 6 ADLs</p>
+        </div>
+      </div>
+      <!-- 切换开关 -->
+      <label class="relative inline-flex items-center cursor-pointer flex-shrink-0 ml-2">
+        <input type="checkbox" id="careDoubler" class="sr-only peer" onchange="calculate()">
+        <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+      </label>
+    </div>
+
+    <!-- 参数配置卡片 -->
+    <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 space-y-4">
+      
+      <!-- 投保模式：单人 / 夫妻 -->
+      <div>
+        <label class="text-xs font-semibold text-slate-600 block mb-1.5" id="t_modeLabel">Income Option</label>
+        <div class="grid grid-cols-2 gap-2">
+          <button type="button" id="btnSingle" onclick="setMode('single')" class="py-2 px-3 text-xs font-semibold rounded-xl border flex items-center justify-center space-x-1.5 transition-all bg-sky-50 border-sky-500 text-sky-700 shadow-sm">
+            <i class="fa-solid fa-user"></i>
+            <span id="t_modeSingle">Single Life</span>
+          </button>
+          <button type="button" id="btnJoint" onclick="setMode('joint')" class="py-2 px-3 text-xs font-semibold rounded-xl border flex items-center justify-center space-x-1.5 transition-all bg-white border-slate-200 text-slate-600 hover:border-slate-300">
+            <i class="fa-solid fa-user-group"></i>
+            <span id="t_modeJoint">Joint Lives</span>
+          </button>
+        </div>
+        <p id="jointNotice" class="text-[11px] text-slate-400 mt-1.5 hidden">* Joint payout is determined by the attained age of the younger owner.</p>
+      </div>
+
+      <hr class="border-slate-100">
+
+      <!-- 单笔初始资金 -->
+      <div>
+        <div class="flex justify-between items-center mb-1.5">
+          <label class="text-xs font-semibold text-slate-700" id="t_premiumLabel">Initial Premium</label>
+          <span class="text-xs font-bold text-sky-600 font-mono" id="premiumDisplay">$100,000</span>
+        </div>
+        <div class="relative rounded-lg shadow-sm">
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 text-sm">$</div>
+          <input type="number" id="premiumInput" value="100000" step="5000" min="20000" max="5000000" oninput="syncPremium(this.value)" class="block w-full pl-8 pr-3 py-2 text-sm border border-slate-200 rounded-xl focus:ring-sky-500 focus:border-sky-500 font-mono font-medium">
+        </div>
+        <!-- 快速选择胶囊按钮 -->
+        <div class="flex space-x-1.5 mt-2">
+          <button onclick="setPremium(100000)" class="flex-1 py-1 text-[11px] rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 font-medium">$100k</button>
+          <button onclick="setPremium(250000)" class="flex-1 py-1 text-[11px] rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 font-medium">$250k</button>
+          <button onclick="setPremium(500000)" class="flex-1 py-1 text-[11px] rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 font-medium">$500k</button>
+          <button onclick="setPremium(1000000)" class="flex-1 py-1 text-[11px] rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 font-medium">$1M</button>
+        </div>
+      </div>
+
+      <hr class="border-slate-100">
+
+      <!-- 规划年龄与起领年龄滑块 -->
+      <div class="space-y-4">
+        <!-- 投保年龄 -->
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <span class="text-xs font-semibold text-slate-700" id="t_startAgeLabel">Starting Age (Issue Age)</span>
+            <span class="text-xs font-bold font-mono text-sky-600 bg-sky-50 px-2 py-0.5 rounded" id="issueAgeVal">60 yrs</span>
+          </div>
+          <input type="range" id="issueAge" min="50" max="80" value="60" oninput="onIssueAgeChange(this.value)" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer">
+          <div class="flex justify-between text-[10px] text-slate-400 mt-0.5 font-mono">
+            <span id="t_slider50">50 yrs</span>
+            <span id="t_slider65">65 yrs</span>
+            <span id="t_slider80">80 yrs</span>
+          </div>
+        </div>
+
+        <!-- 开始领取收入年龄 -->
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <span class="text-xs font-semibold text-slate-700" id="t_incomeAgeLabel">Income Start Age</span>
+            <span class="text-xs font-bold font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded" id="startAgeVal">65 yrs</span>
+          </div>
+          <input type="range" id="startAge" min="50" max="80" value="65" oninput="onStartAgeChange(this.value)" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer">
+          <div class="flex justify-between text-[10px] text-slate-400 mt-0.5 font-mono">
+            <span id="t_slider50_2">50 yrs</span>
+            <span id="t_slider65_2">65 yrs</span>
+            <span id="t_slider80_2">80 yrs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 递延期限提要 -->
+      <div class="bg-slate-50 rounded-xl p-3 border border-slate-100 flex items-center justify-between text-xs">
+        <span class="text-slate-500" id="t_durationLabel">Deferral Duration</span>
+        <span id="durationBadge" class="font-bold text-slate-700 font-mono">5 Years (Year 5 Column)</span>
+      </div>
+
+    </div>
+
+    <!-- 逐年滚存明细（可折叠） -->
+    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+      <button onclick="toggleSchedule()" class="w-full px-4 py-3 text-left font-semibold text-xs text-slate-700 flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition">
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-chart-line text-sky-500"></i>
+          <span id="t_schedTitle">7.2% Compounding Roll-Up Schedule</span>
+        </span>
+        <i id="schedChevron" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+      </button>
+
+      <div id="scheduleContainer" class="hidden border-t border-slate-100 overflow-x-auto custom-scroll">
+        <table class="w-full text-left border-collapse text-[11px] font-mono whitespace-nowrap">
+          <thead class="bg-slate-50 text-slate-500 border-b border-slate-200">
+            <tr>
+              <th class="py-2 px-3" id="t_thYear">Policy Year</th>
+              <th class="py-2 px-2" id="t_thAge">Attained Age</th>
+              <th class="py-2 px-2" id="t_thRate">Payout Rate</th>
+              <th class="py-2 px-3 text-right">Income Base (7.2%)</th>
+              <th class="py-2 px-3 text-right" id="t_thAnnual">Annual Income</th>
+            </tr>
+          </thead>
+          <tbody id="scheduleBody" class="divide-y divide-slate-100"><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 0 (Immediate)</td>
+          <td class="py-2 px-2">60  yrs</td>
+          <td class="py-2 px-2 text-sky-700">7.13%</td>
+          <td class="py-2 px-3 text-right">$100,000</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$7,130</td>
+        </tr><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 1</td>
+          <td class="py-2 px-2">61  yrs</td>
+          <td class="py-2 px-2 text-sky-700">7.39%</td>
+          <td class="py-2 px-3 text-right">$107,200</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$7,922</td>
+        </tr><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 2</td>
+          <td class="py-2 px-2">62  yrs</td>
+          <td class="py-2 px-2 text-sky-700">7.79%</td>
+          <td class="py-2 px-3 text-right">$114,918</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$8,952</td>
+        </tr><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 3</td>
+          <td class="py-2 px-2">63  yrs</td>
+          <td class="py-2 px-2 text-sky-700">8.11%</td>
+          <td class="py-2 px-3 text-right">$123,193</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$9,991</td>
+        </tr><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 4</td>
+          <td class="py-2 px-2">64  yrs</td>
+          <td class="py-2 px-2 text-sky-700">8.24%</td>
+          <td class="py-2 px-3 text-right">$132,062</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$10,882</td>
+        </tr><tr class="bg-sky-50/80 font-bold text-sky-900 border-l-4 border-sky-600">
+          <td class="py-2 px-3">Year 5</td>
+          <td class="py-2 px-2">65  yrs</td>
+          <td class="py-2 px-2 text-sky-700">8.14%</td>
+          <td class="py-2 px-3 text-right">$141,571</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$11,524</td>
+        </tr><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 6</td>
+          <td class="py-2 px-2">66  yrs</td>
+          <td class="py-2 px-2 text-sky-700">8.26%</td>
+          <td class="py-2 px-3 text-right">$151,764</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$12,536</td>
+        </tr><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 7</td>
+          <td class="py-2 px-2">67  yrs</td>
+          <td class="py-2 px-2 text-sky-700">8.28%</td>
+          <td class="py-2 px-3 text-right">$162,691</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$13,471</td>
+        </tr><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 8</td>
+          <td class="py-2 px-2">68  yrs</td>
+          <td class="py-2 px-2 text-sky-700">8.29%</td>
+          <td class="py-2 px-3 text-right">$174,405</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$14,458</td>
+        </tr><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 9</td>
+          <td class="py-2 px-2">69  yrs</td>
+          <td class="py-2 px-2 text-sky-700">8.30%</td>
+          <td class="py-2 px-3 text-right">$186,962</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$15,518</td>
+        </tr><tr class="hover:bg-slate-50">
+          <td class="py-2 px-3">Year 10</td>
+          <td class="py-2 px-2">70  yrs</td>
+          <td class="py-2 px-2 text-sky-700">8.31%</td>
+          <td class="py-2 px-3 text-right">$200,423</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$16,655</td>
+        </tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 底部合规说明 -->
+    <div class="text-[10px] text-slate-400 space-y-1 px-1">
+      <p id="t_disclaimer1">* Lifetime payout percentages are determined by attained age and duration.</p>
+      <p id="t_disclaimer2">* Income Base compounds at 7.2% annually (up to 10 yrs or age 85) solely for lifetime withdrawal calculations, not for cash surrender or death benefits.</p>
+    </div>
+
+  </main>
+
+  <!-- 底部固定浮动摘要栏 -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 z-30 shadow-lg">
+    <div class="max-w-md mx-auto flex items-center justify-between">
+      <div>
+        <span class="text-[10px] text-slate-500 block uppercase tracking-wider font-semibold" id="t_bottomTitle">Guaranteed Monthly Income</span>
+        <div class="flex items-baseline space-x-1">
+          <span class="text-sm font-bold text-slate-900">$</span>
+          <span id="bottomMonthly" class="text-xl font-extrabold text-slate-900 font-mono">960.32</span>
+          <span class="text-[10px] text-slate-500 font-normal" id="t_bottomUnit">/mo</span>
+        </div>
+      </div>
+      <button onclick="copyQuote()" id="copyBtn" class="bg-sky-600 hover:bg-sky-700 active:scale-95 text-white font-medium text-xs px-4 py-2.5 rounded-xl shadow-md shadow-sky-500/20 flex items-center space-x-1.5 transition-all">
+        <i class="fa-regular fa-copy"></i>
+        <span id="t_btnCopy">Copy Quote</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="./assets/tool-h5-locale.js"></script>
+  <script>
+    // 多语言词典
+    const i18n = {
+      zh: {
+        pageTitle: "退休保证收入计算器",
+        headerTitle: "Retirement Guaranteed Income",
+        headerSub: "7.2% 保证复利 · 终身保证现金流",
+        monthlyLabel: "保证终身月收入",
+        perMonth: "/ 月",
+        annualLabel: "保证年度终身收入",
+        incomeBaseLabel: "起领时 Income Base",
+        rateBadgeText: "提领率",
+        careTitle: "2x 护理加倍保障",
+        careDesc: "符合 2/6 项 ADL 资格时领取双倍月收入（最长 5 年）",
+        modeLabel: "领取模式 (Income Option)",
+        modeSingle: "单人 Single Life",
+        modeJoint: "夫妻 Joint Lives",
+        jointNotice: "* 夫妻模式以双方中年龄较年轻一方的足岁进行精算匹配。",
+        premiumLabel: "初始资金投入 (Initial Premium)",
+        startAgeLabel: "起始规划年龄 (Starting Age)",
+        incomeAgeLabel: "预计起领年龄 (Income Start Age)",
+        ageUnit: "岁",
+        durationLabel: "递延复利年数 (Duration)",
+        durationSuffix: (d) => `${d} 年 (Year ${d} 列)`,
+        schedTitle: "7.2% 逐年滚存明细表 (Compounding Schedule)",
+        thYear: "保单年度",
+        thAge: "到达年龄",
+        thRate: "保证提领率",
+        thAnnual: "保证年收入",
+        yearNow: "Year 0 (即刻)",
+        yearN: (n) => `Year ${n}`,
+        disclaimer1: "* 终身保证领取比例按起领时足岁与递延年数精算确定。",
+        disclaimer2: "* Income Base 每年以 7.2% 复利计息（最长 10 年或至 85 岁），仅供计算终身提领现金流使用，不可作为一次性现金退保或现金身故金取出。",
+        bottomTitle: "终身保证月现金流",
+        bottomUnit: "/月",
+        btnCopy: "复制方案演算",
+        copied: "已成功复制!",
+        quoteTitle: "【Retirement Guaranteed Income 终身保证年金方案】",
+        quoteMode: "规划模式",
+        quotePremium: "初始规划资金",
+        quotePlanAge: "起始规划年龄",
+        quoteStartAge: "预计起领年龄",
+        quoteBase: "到达起领时 Income Base (7.2%复利)",
+        quoteRate: "保证提领率",
+        quoteMonthly: "保证终身月现金流",
+        quoteAnnual: "保证终身年现金流",
+        quoteDoublerActive: "· [已包含 2x 护理双倍保障激活]"
+      },
+      en: {
+        pageTitle: "Retirement Guaranteed Income Calculator",
+        headerTitle: "Retirement Guaranteed Income",
+        headerSub: "7.2% Guaranteed Roll-up · Lifetime Cash Flow",
+        monthlyLabel: "Guaranteed Monthly Income",
+        perMonth: "/ mo",
+        annualLabel: "Guaranteed Annual Income",
+        incomeBaseLabel: "Income Base at Activation",
+        rateBadgeText: "Payout Rate",
+        careTitle: "2x Enhanced Care Multiplier",
+        careDesc: "Doubles monthly income for up to 5 yrs upon failing 2 of 6 ADLs",
+        modeLabel: "Income Option",
+        modeSingle: "Single Life",
+        modeJoint: "Joint Lives",
+        jointNotice: "* Joint payout is determined by the attained age of the younger owner.",
+        premiumLabel: "Initial Premium",
+        startAgeLabel: "Starting Age (Issue Age)",
+        incomeAgeLabel: "Income Start Age",
+        ageUnit: " yrs",
+        durationLabel: "Deferral Duration",
+        durationSuffix: (d) => `${d} Years (Year ${d} Column)`,
+        schedTitle: "7.2% Compounding Roll-Up Schedule",
+        thYear: "Policy Year",
+        thAge: "Attained Age",
+        thRate: "Payout Rate",
+        thAnnual: "Annual Income",
+        yearNow: "Year 0 (Immediate)",
+        yearN: (n) => `Year ${n}`,
+        disclaimer1: "* Lifetime payout percentages are determined by attained age and duration.",
+        disclaimer2: "* Income Base compounds at 7.2% annually (up to 10 yrs or age 85) solely for lifetime withdrawal calculations, not for cash surrender or death benefits.",
+        bottomTitle: "Guaranteed Monthly Income",
+        bottomUnit: "/mo",
+        btnCopy: "Copy Quote",
+        copied: "Copied!",
+        quoteTitle: "【Retirement Guaranteed Income Summary】",
+        quoteMode: "Option",
+        quotePremium: "Initial Premium",
+        quotePlanAge: "Starting Age",
+        quoteStartAge: "Income Start Age",
+        quoteBase: "Income Base at Start (7.2% Compound)",
+        quoteRate: "Payout Percentage",
+        quoteMonthly: "Monthly Guaranteed Cash Flow",
+        quoteAnnual: "Annual Guaranteed Cash Flow",
+        quoteDoublerActive: "· [2x Enhanced Care Doubler Active]"
+      },
+      es: {
+        pageTitle: "Calculadora de Ingreso Garantizado de Jubilación",
+        headerTitle: "Retirement Guaranteed Income",
+        headerSub: "7.2% Interés Compuesto · Ingreso Vitalicio Garantizado",
+        monthlyLabel: "Ingreso Mensual Garantizado",
+        perMonth: "/ mes",
+        annualLabel: "Ingreso Anual Vitalicio",
+        incomeBaseLabel: "Base de Ingresos al Iniciar",
+        rateBadgeText: "Tasa de Retiro",
+        careTitle: "2x Multiplicador de Cuidado",
+        careDesc: "Duplica el ingreso hasta por 5 años al no calificar en 2 de 6 AVD",
+        modeLabel: "Opción de Ingreso (Income Option)",
+        modeSingle: "Vida Individual",
+        modeJoint: "Vidas Conjuntas",
+        jointNotice: "* La opción conjunta se calcula según la edad del cónyuge menor.",
+        premiumLabel: "Prima Inicial (Initial Premium)",
+        startAgeLabel: "Edad Inicial de Inicio",
+        incomeAgeLabel: "Edad de Inicio de Ingreso",
+        ageUnit: " años",
+        durationLabel: "Años de Aplazamiento (Duration)",
+        durationSuffix: (d) => `${d} Años (Columna Año ${d})`,
+        schedTitle: "Tabla de Crecimiento Compuesto al 7.2%",
+        thYear: "Año de Póliza",
+        thAge: "Edad Alcanzada",
+        thRate: "Tasa de Pago",
+        thAnnual: "Ingreso Anual",
+        yearNow: "Año 0 (Inmediato)",
+        yearN: (n) => `Año ${n}`,
+        disclaimer1: "* El porcentaje de retiro garantizado se calcula según la edad alcanzada y el aplazamiento.",
+        disclaimer2: "* La Base de Ingresos capitaliza al 7.2% anual (máx. 10 años o hasta los 85 años) exclusivamente para calcular el retiro vitalicio, no para rescate en efectivo.",
+        bottomTitle: "Flujo Mensual Garantizado",
+        bottomUnit: "/mes",
+        btnCopy: "Copiar Cotización",
+        copied: "¡Copiado con éxito!",
+        quoteTitle: "【Resumen de Ingreso Vitalicio Garantizado】",
+        quoteMode: "Modalidad",
+        quotePremium: "Prima Inicial",
+        quotePlanAge: "Edad Inicial",
+        quoteStartAge: "Edad de Retiro",
+        quoteBase: "Base de Ingresos (7.2% Compuesto)",
+        quoteRate: "Tasa de Retiro Garantizada",
+        quoteMonthly: "Flujo Mensual Garantizado",
+        quoteAnnual: "Flujo Anual Garantizado",
+        quoteDoublerActive: "· [Multiplicador 2x Activado]"
+      }
+    };
+
+    let currentLang = 'zh';
+    try { const savedLang = localStorage.getItem('omnix_lang'); if (i18n[savedLang]) currentLang = savedLang; } catch (e) {}
+
+    // ===== 语言桥映射：约定值(en/zh-Hans/zh-Hant/es) ↔ 页面 key(zh/en/es) =====
+    const CONVENTION_TO_PAGE = { 'en': 'en', 'zh-Hans': 'zh', 'zh-Hant': 'zh', 'es': 'es' };
+    const PAGE_TO_CONVENTION = { 'zh': 'zh-Hans', 'en': 'en', 'es': 'es' };
+    function toPageLang(bridgeLang) { return CONVENTION_TO_PAGE[bridgeLang] || 'en'; }
+    function toBridgeLang(pageLang) { return PAGE_TO_CONVENTION[pageLang] || 'en'; }
+
+    function applyLang(lang) {
+      currentLang = lang;
+      try { localStorage.setItem('omnix_lang', lang); } catch (e) {}
+      
+      // 更新顶部按钮高亮
+      ['zh', 'en', 'es'].forEach(l => {
+        const btn = document.getElementById('langBtn_' + l);
+        if (l === lang) {
+          btn.className = "px-2 py-0.5 rounded text-white bg-sky-600 transition-all font-semibold";
+        } else {
+          btn.className = "px-2 py-0.5 rounded text-slate-400 hover:text-white transition-all";
+        }
+      });
+
+      const t = i18n[lang];
+      document.getElementById('t_headerTitle').innerText = t.headerTitle;
+      document.getElementById('t_headerSub').innerText = t.headerSub;
+      document.getElementById('t_monthlyLabel').innerText = t.monthlyLabel;
+      document.getElementById('t_perMonth').innerText = t.perMonth;
+      document.getElementById('t_annualLabel').innerText = t.annualLabel;
+      document.getElementById('t_incomeBaseLabel').innerText = t.incomeBaseLabel;
+      document.getElementById('t_careTitle').innerText = t.careTitle;
+      document.getElementById('t_careDesc').innerText = t.careDesc;
+      document.getElementById('t_modeLabel').innerText = t.modeLabel;
+      document.getElementById('t_modeSingle').innerText = t.modeSingle;
+      document.getElementById('t_modeJoint').innerText = t.modeJoint;
+      document.getElementById('jointNotice').innerText = t.jointNotice;
+      document.getElementById('t_premiumLabel').innerText = t.premiumLabel;
+      document.getElementById('t_startAgeLabel').innerText = t.startAgeLabel;
+      document.getElementById('t_incomeAgeLabel').innerText = t.incomeAgeLabel;
+      document.getElementById('t_durationLabel').innerText = t.durationLabel;
+      document.getElementById('t_schedTitle').innerText = t.schedTitle;
+      document.getElementById('t_thYear').innerText = t.thYear;
+      document.getElementById('t_thAge').innerText = t.thAge;
+      document.getElementById('t_thRate').innerText = t.thRate;
+      document.getElementById('t_thAnnual').innerText = t.thAnnual;
+      document.getElementById('t_disclaimer1').innerText = t.disclaimer1;
+      document.getElementById('t_disclaimer2').innerText = t.disclaimer2;
+      document.getElementById('t_bottomTitle').innerText = t.bottomTitle;
+      document.getElementById('t_bottomUnit').innerText = t.bottomUnit;
+      document.getElementById('t_btnCopy').innerText = t.btnCopy;
+
+      const unit = t.ageUnit;
+      document.getElementById('t_slider50').innerText = '50' + unit;
+      document.getElementById('t_slider65').innerText = '65' + unit;
+      document.getElementById('t_slider80').innerText = '80' + unit;
+      document.getElementById('t_slider50_2').innerText = '50' + unit;
+      document.getElementById('t_slider65_2').innerText = '65' + unit;
+      document.getElementById('t_slider80_2').innerText = '80' + unit;
+
+      document.getElementById('issueAgeVal').innerText = document.getElementById('issueAge').value + unit;
+      document.getElementById('startAgeVal').innerText = document.getElementById('startAge').value + unit;
+
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
+      document.title = t.pageTitle;
+
+      calculate();
+    }
+
+    // 用户主动切换语言：渲染 + 反向同步回容器
+    function changeLang(lang) {
+      applyLang(lang);
+      if (typeof window.__REPORT_LANGUAGE === 'function') {
+        window.__REPORT_LANGUAGE(toBridgeLang(lang));
+      }
+    }
+
+    // 精算矩阵数据
+    // Single Life 矩阵 (Attained Age 50-80 x Duration Year 0-10)[cite: 2]
+    const singleLifeTable = {
+      50: [0.0528, 0.0528, 0.0528, 0.0528, 0.0528, 0.0528, 0.0528, 0.0528, 0.0528, 0.0528, 0.0528], //[cite: 2]
+      51: [0.0538, 0.0540, 0.0540, 0.0540, 0.0540, 0.0540, 0.0540, 0.0540, 0.0540, 0.0540, 0.0540], //[cite: 2]
+      52: [0.0549, 0.0550, 0.0567, 0.0567, 0.0567, 0.0567, 0.0567, 0.0567, 0.0567, 0.0567, 0.0567], //[cite: 2]
+      53: [0.0561, 0.0561, 0.0577, 0.0571, 0.0571, 0.0571, 0.0571, 0.0571, 0.0571, 0.0571, 0.0571], //[cite: 2]
+      54: [0.0575, 0.0579, 0.0589, 0.0586, 0.0582, 0.0582, 0.0582, 0.0582, 0.0582, 0.0582, 0.0582], //[cite: 2]
+      55: [0.0595, 0.0604, 0.0609, 0.0611, 0.0605, 0.0595, 0.0595, 0.0595, 0.0595, 0.0595, 0.0595], //[cite: 2]
+      56: [0.0615, 0.0615, 0.0624, 0.0626, 0.0623, 0.0606, 0.0609, 0.0609, 0.0609, 0.0609, 0.0609], //[cite: 2]
+      57: [0.0628, 0.0628, 0.0636, 0.0636, 0.0636, 0.0631, 0.0620, 0.0618, 0.0618, 0.0618, 0.0618], //[cite: 2]
+      58: [0.0648, 0.0641, 0.0656, 0.0648, 0.0648, 0.0643, 0.0637, 0.0629, 0.0619, 0.0619, 0.0619], //[cite: 2]
+      59: [0.0673, 0.0670, 0.0682, 0.0670, 0.0669, 0.0661, 0.0658, 0.0651, 0.0640, 0.0630, 0.0630], //[cite: 2]
+      60: [0.0713, 0.0699, 0.0703, 0.0689, 0.0689, 0.0678, 0.0676, 0.0673, 0.0662, 0.0651, 0.0641], //[cite: 2]
+      61: [0.0730, 0.0739, 0.0726, 0.0707, 0.0717, 0.0698, 0.0698, 0.0694, 0.0683, 0.0671, 0.0660], //[cite: 2]
+      62: [0.0750, 0.0759, 0.0779, 0.0799, 0.0773, 0.0759, 0.0722, 0.0720, 0.0719, 0.0711, 0.0697], //[cite: 2]
+      63: [0.0765, 0.0771, 0.0791, 0.0811, 0.0800, 0.0789, 0.0773, 0.0730, 0.0729, 0.0721, 0.0712], //[cite: 2]
+      64: [0.0780, 0.0785, 0.0803, 0.0813, 0.0824, 0.0801, 0.0807, 0.0774, 0.0739, 0.0731, 0.0722], //[cite: 2]
+      65: [0.0795, 0.0807, 0.0827, 0.0825, 0.0849, 0.0814, 0.0816, 0.0808, 0.0775, 0.0740, 0.0732], //[cite: 2]
+      66: [0.0805, 0.0810, 0.0827, 0.0850, 0.0849, 0.0826, 0.0826, 0.0818, 0.0809, 0.0776, 0.0741], //[cite: 2]
+      67: [0.0815, 0.0820, 0.0833, 0.0850, 0.0856, 0.0851, 0.0837, 0.0828, 0.0819, 0.0810, 0.0778], //[cite: 2]
+      68: [0.0825, 0.0831, 0.0845, 0.0867, 0.0857, 0.0851, 0.0852, 0.0840, 0.0829, 0.0820, 0.0811], //[cite: 2]
+      69: [0.0835, 0.0845, 0.0858, 0.0880, 0.0868, 0.0859, 0.0857, 0.0853, 0.0841, 0.0830, 0.0821], //[cite: 2]
+      70: [0.0861, 0.0867, 0.0882, 0.0904, 0.0881, 0.0872, 0.0868, 0.0861, 0.0854, 0.0842, 0.0831], //[cite: 2]
+      71: [0.0861, 0.0870, 0.0888, 0.0905, 0.0910, 0.0882, 0.0873, 0.0869, 0.0862, 0.0855, 0.0843], //[cite: 2]
+      72: [0.0875, 0.0879, 0.0894, 0.0911, 0.0917, 0.0906, 0.0883, 0.0874, 0.0870, 0.0863, 0.0856], //[cite: 2]
+      73: [0.0887, 0.0891, 0.0901, 0.0918, 0.0918, 0.0912, 0.0907, 0.0884, 0.0875, 0.0871, 0.0864], //[cite: 2]
+      74: [0.0899, 0.0902, 0.0912, 0.0924, 0.0919, 0.0919, 0.0913, 0.0908, 0.0885, 0.0876, 0.0872], //[cite: 2]
+      75: [0.0923, 0.0930, 0.0933, 0.0938, 0.0925, 0.0920, 0.0920, 0.0914, 0.0909, 0.0886, 0.0877], //[cite: 2]
+      76: [0.0880, 0.0925, 0.0931, 0.0939, 0.0935, 0.0926, 0.0921, 0.0922, 0.0915, 0.0910, 0.0887], //[cite: 2]
+      77: [0.0881, 0.0902, 0.0926, 0.0936, 0.0932, 0.0940, 0.0927, 0.0922, 0.0923, 0.0916, 0.0911], //[cite: 2]
+      78: [0.0882, 0.0903, 0.0922, 0.0932, 0.0933, 0.0937, 0.0941, 0.0928, 0.0924, 0.0923, 0.0917], //[cite: 2]
+      79: [0.0883, 0.0904, 0.0923, 0.0933, 0.0933, 0.0934, 0.0941, 0.0942, 0.0929, 0.0924, 0.0925], //[cite: 2]
+      80: [0.0886, 0.0905, 0.0924, 0.0937, 0.0934, 0.0938, 0.0938, 0.0942, 0.0943, 0.0930, 0.0925]  //[cite: 2]
+    };
+
+    // Joint Lives 矩阵 (Younger Age 50-80 x Duration Year 0-10)[cite: 3]
+    const jointLifeTable = {
+      50: [0.0458, 0.0458, 0.0458, 0.0458, 0.0458, 0.0458, 0.0458, 0.0458, 0.0458, 0.0458, 0.0458], //[cite: 3]
+      51: [0.0468, 0.0470, 0.0470, 0.0470, 0.0470, 0.0470, 0.0470, 0.0470, 0.0470, 0.0470, 0.0470], //[cite: 3]
+      52: [0.0479, 0.0480, 0.0497, 0.0497, 0.0497, 0.0497, 0.0497, 0.0497, 0.0497, 0.0497, 0.0497], //[cite: 3]
+      53: [0.0491, 0.0491, 0.0507, 0.0501, 0.0501, 0.0501, 0.0501, 0.0501, 0.0501, 0.0501, 0.0501], //[cite: 3]
+      54: [0.0505, 0.0509, 0.0519, 0.0512, 0.0516, 0.0512, 0.0512, 0.0512, 0.0512, 0.0512, 0.0512], //[cite: 3]
+      55: [0.0525, 0.0534, 0.0539, 0.0541, 0.0535, 0.0525, 0.0525, 0.0525, 0.0525, 0.0525, 0.0525], //[cite: 3]
+      56: [0.0545, 0.0545, 0.0554, 0.0556, 0.0553, 0.0536, 0.0539, 0.0539, 0.0539, 0.0539, 0.0539], //[cite: 3]
+      57: [0.0558, 0.0558, 0.0566, 0.0566, 0.0566, 0.0561, 0.0550, 0.0548, 0.0548, 0.0548, 0.0548], //[cite: 3]
+      58: [0.0578, 0.0571, 0.0586, 0.0578, 0.0578, 0.0573, 0.0567, 0.0559, 0.0549, 0.0549, 0.0549], //[cite: 3]
+      59: [0.0603, 0.0600, 0.0612, 0.0600, 0.0599, 0.0591, 0.0588, 0.0581, 0.0570, 0.0560, 0.0560], //[cite: 3]
+      60: [0.0643, 0.0629, 0.0633, 0.0619, 0.0619, 0.0608, 0.0606, 0.0603, 0.0592, 0.0581, 0.0571], //[cite: 3]
+      61: [0.0660, 0.0669, 0.0656, 0.0637, 0.0647, 0.0628, 0.0628, 0.0624, 0.0613, 0.0601, 0.0590], //[cite: 3]
+      62: [0.0680, 0.0689, 0.0709, 0.0729, 0.0703, 0.0689, 0.0652, 0.0650, 0.0649, 0.0641, 0.0627], //[cite: 3]
+      63: [0.0695, 0.0701, 0.0721, 0.0741, 0.0730, 0.0719, 0.0703, 0.0660, 0.0659, 0.0651, 0.0642], //[cite: 3]
+      64: [0.0710, 0.0715, 0.0733, 0.0743, 0.0754, 0.0731, 0.0737, 0.0704, 0.0669, 0.0661, 0.0652], //[cite: 3]
+      65: [0.0725, 0.0737, 0.0757, 0.0755, 0.0779, 0.0744, 0.0746, 0.0738, 0.0705, 0.0670, 0.0662], //[cite: 3]
+      66: [0.0735, 0.0740, 0.0757, 0.0780, 0.0779, 0.0756, 0.0756, 0.0748, 0.0739, 0.0706, 0.0671], //[cite: 3]
+      67: [0.0745, 0.0750, 0.0763, 0.0780, 0.0786, 0.0781, 0.0767, 0.0758, 0.0749, 0.0740, 0.0708], //[cite: 3]
+      68: [0.0755, 0.0761, 0.0775, 0.0797, 0.0787, 0.0781, 0.0782, 0.0770, 0.0759, 0.0750, 0.0741], //[cite: 3]
+      69: [0.0765, 0.0775, 0.0788, 0.0810, 0.0798, 0.0789, 0.0787, 0.0783, 0.0771, 0.0760, 0.0751], //[cite: 3]
+      70: [0.0791, 0.0797, 0.0812, 0.0834, 0.0811, 0.0802, 0.0798, 0.0791, 0.0784, 0.0772, 0.0761], //[cite: 3]
+      71: [0.0791, 0.0800, 0.0818, 0.0835, 0.0840, 0.0812, 0.0803, 0.0799, 0.0792, 0.0785, 0.0773], //[cite: 3]
+      72: [0.0805, 0.0809, 0.0824, 0.0841, 0.0847, 0.0836, 0.0813, 0.0804, 0.0800, 0.0793, 0.0786], //[cite: 3]
+      73: [0.0817, 0.0821, 0.0831, 0.0848, 0.0848, 0.0842, 0.0837, 0.0814, 0.0805, 0.0801, 0.0794], //[cite: 3]
+      74: [0.0829, 0.0832, 0.0842, 0.0854, 0.0849, 0.0849, 0.0843, 0.0838, 0.0815, 0.0806, 0.0802], //[cite: 3]
+      75: [0.0853, 0.0860, 0.0863, 0.0868, 0.0855, 0.0850, 0.0850, 0.0844, 0.0839, 0.0816, 0.0807], //[cite: 3]
+      76: [0.0810, 0.0855, 0.0861, 0.0869, 0.0865, 0.0856, 0.0851, 0.0852, 0.0845, 0.0840, 0.0817], //[cite: 3]
+      77: [0.0811, 0.0832, 0.0856, 0.0866, 0.0862, 0.0870, 0.0857, 0.0852, 0.0853, 0.0846, 0.0841], //[cite: 3]
+      78: [0.0812, 0.0833, 0.0852, 0.0862, 0.0863, 0.0867, 0.0871, 0.0858, 0.0853, 0.0854, 0.0847], //[cite: 3]
+      79: [0.0813, 0.0834, 0.0853, 0.0863, 0.0863, 0.0864, 0.0871, 0.0872, 0.0859, 0.0854, 0.0855], //[cite: 3]
+      80: [0.0816, 0.0835, 0.0854, 0.0867, 0.0864, 0.0868, 0.0868, 0.0872, 0.0873, 0.0860, 0.0855]  //[cite: 3]
+    };
+
+    let currentMode = 'single';
+
+    function setMode(mode) {
+      currentMode = mode;
+      const btnSingle = document.getElementById('btnSingle');
+      const btnJoint = document.getElementById('btnJoint');
+      const jointNotice = document.getElementById('jointNotice');
+
+      if (mode === 'single') {
+        btnSingle.className = "py-2 px-3 text-xs font-semibold rounded-xl border flex items-center justify-center space-x-1.5 transition-all bg-sky-50 border-sky-500 text-sky-700 shadow-sm";
+        btnJoint.className = "py-2 px-3 text-xs font-semibold rounded-xl border flex items-center justify-center space-x-1.5 transition-all bg-white border-slate-200 text-slate-600 hover:border-slate-300";
+        jointNotice.classList.add('hidden');
+      } else {
+        btnJoint.className = "py-2 px-3 text-xs font-semibold rounded-xl border flex items-center justify-center space-x-1.5 transition-all bg-sky-50 border-sky-500 text-sky-700 shadow-sm";
+        btnSingle.className = "py-2 px-3 text-xs font-semibold rounded-xl border flex items-center justify-center space-x-1.5 transition-all bg-white border-slate-200 text-slate-600 hover:border-slate-300";
+        jointNotice.classList.remove('hidden');
+      }
+      calculate();
+    }
+
+    function setPremium(val) {
+      document.getElementById('premiumInput').value = val;
+      syncPremium(val);
+    }
+
+    function syncPremium(val) {
+      const num = parseFloat(val) || 0;
+      document.getElementById('premiumDisplay').innerText = '$' + num.toLocaleString();
+      calculate();
+    }
+
+    function onIssueAgeChange(val) {
+      const unit = i18n[currentLang].ageUnit;
+      document.getElementById('issueAgeVal').innerText = val + unit;
+      const startSlider = document.getElementById('startAge');
+      if (parseInt(startSlider.value) < parseInt(val)) {
+        startSlider.value = val;
+        document.getElementById('startAgeVal').innerText = val + unit;
+      }
+      calculate();
+    }
+
+    function onStartAgeChange(val) {
+      const unit = i18n[currentLang].ageUnit;
+      const issueSlider = document.getElementById('issueAge');
+      if (parseInt(val) < parseInt(issueSlider.value)) {
+        val = issueSlider.value;
+        document.getElementById('startAge').value = val;
+      }
+      document.getElementById('startAgeVal').innerText = val + unit;
+      calculate();
+    }
+
+    function getRate(age, duration, mode) {
+      const table = (mode === 'joint') ? jointLifeTable : singleLifeTable;
+      const lookupAge = Math.min(80, Math.max(50, age));
+      const lookupDuration = Math.min(10, Math.max(0, duration));
+      const rates = table[lookupAge];
+      return rates ? rates[lookupDuration] : 0.0814;
+    }
+
+    function calculate() {
+      const premium = parseFloat(document.getElementById('premiumInput').value) || 0;
+      const issueAge = parseInt(document.getElementById('issueAge').value);
+      const startAge = parseInt(document.getElementById('startAge').value);
+      const isDoubler = document.getElementById('careDoubler').checked;
+      const t = i18n[currentLang];
+
+      // 更新 Doubler 样式
+      const dStatus = document.getElementById('doublerStatus');
+      const dIconBg = document.getElementById('doublerIconBg');
+      if (isDoubler) {
+        dStatus.innerText = "ACTIVE (2x)";
+        dStatus.className = "text-[10px] font-bold px-1.5 py-0.2 rounded bg-amber-500 text-white animate-pulse";
+        dIconBg.className = "w-9 h-9 rounded-lg bg-amber-500 text-white flex items-center justify-center text-base flex-shrink-0 transition-colors shadow-sm";
+      } else {
+        dStatus.innerText = "OFF";
+        dStatus.className = "text-[10px] font-bold px-1.5 py-0.2 rounded bg-slate-100 text-slate-500";
+        dIconBg.className = "w-9 h-9 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center text-base flex-shrink-0 transition-colors";
+      }
+
+      // 计算递延年数
+      const duration = Math.min(10, Math.max(0, startAge - issueAge));
+      document.getElementById('durationBadge').innerText = t.durationSuffix(duration);
+
+      // 计算 7.2% 复利后的 Income Base (上限 10 年)
+      const rollUpRate = 0.072;
+      const incomeBase = premium * Math.pow(1 + rollUpRate, duration);
+
+      // 获取精算提领率
+      let baseRate = getRate(startAge, duration, currentMode);
+      let effectiveRate = isDoubler ? baseRate * 2 : baseRate;
+
+      // 计算终身保证收入
+      const annualIncome = incomeBase * effectiveRate;
+      const monthlyIncome = annualIncome / 12;
+
+      // 渲染主卡片
+      document.getElementById('incomeBase').innerText = '$' + incomeBase.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('annualIncome').innerText = '$' + annualIncome.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('monthlyIncome').innerText = monthlyIncome.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('bottomMonthly').innerText = monthlyIncome.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+      // 渲染提领率 Badge
+      const ratePctText = (effectiveRate * 100).toFixed(2) + '%';
+      document.getElementById('rateBadge').innerText = `${t.rateBadgeText} ${ratePctText}` + (isDoubler ? ' (2x)' : '');
+
+      renderSchedule(premium, issueAge, startAge);
+    }
+
+    function renderSchedule(premium, issueAge, startAge) {
+      const tbody = document.getElementById('scheduleBody');
+      tbody.innerHTML = '';
+      const rollUpRate = 0.072;
+      const targetDuration = Math.min(10, Math.max(0, startAge - issueAge));
+      const t = i18n[currentLang];
+
+      for (let y = 0; y <= 10; y++) {
+        const curAge = issueAge + y;
+        const curBase = premium * Math.pow(1 + rollUpRate, y);
+        const rate = getRate(curAge, y, currentMode);
+        const annual = curBase * rate;
+        const isCurrent = (y === targetDuration);
+
+        const tr = document.createElement('tr');
+        tr.className = isCurrent ? "bg-sky-50/80 font-bold text-sky-900 border-l-4 border-sky-600" : "hover:bg-slate-50";
+        tr.innerHTML = `
+          <td class="py-2 px-3">${y === 0 ? t.yearNow : t.yearN(y)}</td>
+          <td class="py-2 px-2">${curAge} ${t.ageUnit}</td>
+          <td class="py-2 px-2 text-sky-700">${(rate * 100).toFixed(2)}%</td>
+          <td class="py-2 px-3 text-right">$${curBase.toLocaleString('en-US', { maximumFractionDigits: 0 })}</td>
+          <td class="py-2 px-3 text-right text-emerald-600 font-semibold">$${annual.toLocaleString('en-US', { maximumFractionDigits: 0 })}</td>
+        `;
+        tbody.appendChild(tr);
+      }
+    }
+
+    function toggleSchedule() {
+      const container = document.getElementById('scheduleContainer');
+      const chevron = document.getElementById('schedChevron');
+      if (container.classList.contains('hidden')) {
+        container.classList.remove('hidden');
+        chevron.style.transform = 'rotate(180deg)';
+      } else {
+        container.classList.add('hidden');
+        chevron.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function copyQuote() {
+      const premium = document.getElementById('premiumDisplay').innerText;
+      const issueAge = document.getElementById('issueAgeVal').innerText;
+      const startAge = document.getElementById('startAgeVal').innerText;
+      const duration = document.getElementById('durationBadge').innerText;
+      const isDoubler = document.getElementById('careDoubler').checked;
+      const rateText = document.getElementById('rateBadge').innerText;
+      const incomeBase = document.getElementById('incomeBase').innerText;
+      const annual = document.getElementById('annualIncome').innerText;
+      const monthly = document.getElementById('monthlyIncome').innerText;
+      const t = i18n[currentLang];
+      const modeText = currentMode === 'single' ? t.modeSingle : t.modeJoint;
+
+      const text = `${t.quoteTitle}
+· ${t.quoteMode}: ${modeText}
+· ${t.quotePremium}: ${premium}
+· ${t.quotePlanAge}: ${issueAge} | ${t.quoteStartAge}: ${startAge} (${duration})
+· ${t.quoteBase}: ${incomeBase}
+· ${t.quoteRate}: ${rateText}
+· ${t.quoteMonthly}: $${monthly} ${t.perMonth}
+· ${t.quoteAnnual}: ${annual}
+${isDoubler ? t.quoteDoublerActive : ''}`;
+
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('copyBtn');
+        const origHTML = btn.innerHTML;
+        btn.innerHTML = `<i class="fa-solid fa-check"></i><span>${t.copied}</span>`;
+        btn.classList.replace('bg-sky-600', 'bg-emerald-600');
+        setTimeout(() => {
+          btn.innerHTML = origHTML;
+          btn.classList.replace('bg-emerald-600', 'bg-sky-600');
+        }, 2000);
+      });
+    }
+
+    // 接入语言桥：容器推送 / URL / localStorage 语言同步渲染
+    if (window.__LOCALE_BRIDGE) {
+      window.__LOCALE_BRIDGE.onChange(function (bridgeLang) {
+        applyLang(toPageLang(bridgeLang));
+      });
+    }
+
+    // 初始化运行：桥接初始语言 > localStorage > 默认(zh)
+    window.onload = function() {
+      if (window.__LOCALE_BRIDGE && window.__LOCALE_BRIDGE.getInitialLang()) {
+        applyLang(toPageLang(window.__LOCALE_BRIDGE.getInitialLang()));
+      } else {
+        applyLang(currentLang);
+      }
+    };
+  </script>
+
+</body></html>
